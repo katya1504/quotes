@@ -13,10 +13,12 @@ useEffect(() =>{
 }, [])
 
 const getAdvice=async () =>{
-  const response= await fetch('http://www.boredapi.com/api/activity/ ');
+  const response= await fetch(`http://www.boredapi.com/api/activity/`);
   const data = await response.json();
   setAdvice(data.activity)
 }
+
+
 
   return (
     <div className="App">
